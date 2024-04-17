@@ -1,0 +1,19 @@
+package views
+
+templ commonHeaders() {
+<script src="/htmx.min.js"></script>
+}
+
+templ htmlWrapper() {
+<html>
+
+<head>
+  @commonHeaders()
+</head>
+
+<body>
+  { children... }
+</body>
+
+</html>
+}
