@@ -25,9 +25,6 @@ func main() {
 		for i := 0; i < 5; i++ {
 			list = append(list, components_todo_item.TodoItem{
 				Content: fmt.Sprint("Content", i+1),
-				RenderItem: func(item components_todo_item.TodoItem) string {
-					return components_todo_item.TodoItemView(item)
-				},
 			})
 		}
 		res := components_todo_list.TodoListView(list)

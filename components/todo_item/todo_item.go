@@ -9,8 +9,7 @@ import (
 )
 
 type TodoItem struct {
-	Content    string
-	RenderItem func(item TodoItem) string
+	Content string
 }
 
 func TodoItemView(item TodoItem) string {
