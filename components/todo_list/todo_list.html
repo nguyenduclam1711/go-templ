@@ -1,0 +1,5 @@
+{{ block "todo_list" . }}
+<div style="display: flex; flex-direction: column; gap: 16px">
+  {{ range .List }} {{ . | RenderItem }} {{ end }}
+</div>
+{{ end }}
